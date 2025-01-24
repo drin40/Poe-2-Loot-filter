@@ -1,0 +1,1647 @@
+
+#=======================================================================================================================================
+# Uniques
+#=======================================================================================================================================
+
+Show
+Rarity = Unique
+SetTextColor 175 96 37 255
+SetBorderColor 175 96 37 255
+SetBackgroundColor 53 13 13 200
+PlayAlertSound 3 300
+PlayEffect Brown
+MinimapIcon 2 Brown Star
+SetFontSize 32
+
+#=======================================================================================================================================
+# TOP TIER AND SECOND BEST TIER BASES BORDER HIGHLIGHT
+#=======================================================================================================================================
+
+
+#-------------------------------------------------------
+# BOWS & CROSSBOWS
+#-------------------------------------------------------
+
+
+Show
+Class "Bow" "Crossbow"
+BaseType "Expert Bombard Crossbow" "Expert Dualstring Bow" "Expert Dyad Crossbow"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Bow" "Crossbow"
+BaseType "Expert Warden Bow" "Expert Zealot Bow" "Expert Cultist Bow" "Expert Tense Crossbow"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Bow" "Crossbow"
+BaseType "Expert Bombard Crossbow" "Expert Dualstring Bow"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+
+Show
+Class "Bow" "Crossbow"
+BaseType "Expert Dyad Crossbow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Tense Crossbow"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------------------------------------
+# ONE HANDED MACES
+#-------------------------------------------------------
+
+Hide
+Class "One Hand Mace"
+BaseType "Expert Construct Hammer" "Expert Brigand Mace"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "One Hand Mace"
+BaseType "Expert Warpick" "Expert Smithing Hammer"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "One Hand Mace"
+BaseType "Expert Construct Hammer" "Expert Brigand Mace"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "One Hand Mace"
+BaseType "Expert Warpick" "Expert Smithing Hammer"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+
+#-------------------------------------------------------
+# TWO HANDED MACES
+#-------------------------------------------------------
+
+Hide
+Class "Two Hand Mace"
+BaseType "Expert Crumbling Maul" "Expert Leaden Greathammer"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Two Hand Mace"
+BaseType "Expert Cultist Greathammer" "Expert Oak Greathammer"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Two Hand Mace"
+BaseType "Expert Crumbling Maul" "Expert Leaden Greathammer"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Two Hand Mace"
+BaseType "Expert Cultist Greathammer" "Expert Oak Greathammer"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+
+#-------------------------------------------------------
+# WARSTAVES
+#-------------------------------------------------------
+
+Hide
+Class "Quarterstaves"
+BaseType "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Long Quarterstaff" "Expert Gothic Quarterstaff"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Quarterstaves"
+BaseType "Expert Crackling Quarterstaff" "Expert Crescent Quarterstaff"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Quarterstaves"
+BaseType "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Long Quarterstaff" "Expert Gothic Quarterstaff"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Quarterstaves"
+BaseType "Expert Crescent Quarterstaff"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+
+#-------------------------------------------------------
+# FOCUS
+#-------------------------------------------------------
+
+Hide
+Class "Focus"
+BaseType "Expert Plumed Focus"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Focus"
+BaseType "Expert Crystal Focus"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Focus"
+BaseType "Expert Plumed Focus"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Focus"
+BaseType "Expert Crystal Focus"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+
+#-------------------------------------------------------
+# WANDS,SCEPTRES and STAVES CANNOT BE DONE ATM - ITEM DATA DESIGN OR DATABASE  ISSUE, NOT FILTER ISSUE
+#-------------------------------------------------------
+
+Hide
+Class "Wand" "Sceptre" "Staff"
+BaseType "Bone Wand" "Attuned Wand" "Volatile Wand" "Withered Wand" "Siphoning Wand"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+AreaLevel > 70
+
+Show
+Class "Wand"
+BaseType "Bone Wand" "Attuned Wand" "Volatile Wand" "Withered Wand" "Siphoning Wand"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+AreaLevel > 70
+
+Show
+Class "Wand" "Sceptre" "Staff"
+BaseType "Bone Wand" "Attuned Wand" "Volatile Wand" "Withered Wand" "Siphoning Wand"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+AreaLevel > 70
+
+Show
+Class "Wand"
+BaseType "Bone Wand" "Attuned Wand" "Volatile Wand" "Withered Wand" "Siphoning Wand"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+AreaLevel > 70
+
+#-------------------------------------------------------
+# QUIVERS HAVE DIFERENT USE AND THERE ARE TOO MUCH BASES THAT ARE "USABLE" I HANDPICKED THE MOST PROMISSING ONES LOOKING AT THE MARKET LISTNINGS FOR THEM
+#-------------------------------------------------------
+
+Show
+Class "Quiver"
+BaseType "Primed Quiver" 
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------------------------------------
+# SHIELDS
+#-------------------------------------------------------
+
+Hide
+Class "Shields"
+BaseType "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Feathered Targe"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Shields"
+BaseType  "Expert Jingling Crest Shield" "Expert Rampart Tower Shield" "Expert Crescent Targe"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Shields"
+BaseType "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Feathered Targe"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Shields"
+BaseType  "Expert Jingling Crest Shield" "Expert Rampart Tower Shield" "Expert Crescent Targe"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+
+#-------------------------------------------------------
+# BODY ARMOUR WITH 10+ QUALITY
+#-------------------------------------------------------
+
+Show
+Class "Body" #Armour
+BaseType "Expert Vaal Cuirass" "Expert Iron Cuirass" "Expert Steel Plate"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+Show
+Class "Body" #Energy Shield
+BaseType "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+
+
+#-------------------------------------------------------
+# BODY ARMOUR
+#-------------------------------------------------------
+
+Hide
+Class "Body" #Armour
+BaseType "Expert Vaal Cuirass" "Expert Iron Cuirass" "Expert Steel Plate"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Energy Shield
+BaseType "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Evasion
+BaseType "Expert Serpentscale Coat" "Expert Studded Vest" "Expert Pathfinder Coat"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Armour/Energy Shield
+BaseType "Expert Sacrificial Mantle" "Expert Pelt Mantle" "Expert Shaman Mantle"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Armour/Evasion
+BaseType "Expert Scale Mail" "Expert Cloaked Mail" "Expert Rogue Armour"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Evasion/Energy Shield
+BaseType "Expert Scalper's Jacket" "Expert Waxed Jacket" "Expert Wayfarer Jacket"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Body" #Armour
+BaseType "Expert Vaal Cuirass" "Expert Iron Cuirass" "Expert Steel Plate"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Body" #Energy Shield
+BaseType "Expert Altar Robe" "Expert Hexer's Robe" "Expert Keth Raiment"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Body" #Evasion
+BaseType "Expert Serpentscale Coat" "Expert Studded Vest" "Expert Pathfinder Coat"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Armour/Energy Shield
+BaseType "Expert Sacrificial Mantle" "Expert Pelt Mantle" "Expert Shaman Mantle"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Body" #Armour/Evasion
+BaseType "Expert Scale Mail" "Expert Cloaked Mail" "Expert Rogue Armour"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Body" #Evasion/Energy Shield
+BaseType "Expert Scalper's Jacket" "Expert Waxed Jacket" "Expert Wayfarer Jacket"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Helmet" #Energy Shield
+BaseType "Expert Feathered Tiara"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+Show
+Class "Helmet" #Energy Shield
+BaseType "Expert Chain Tiara"
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+Show
+Class "Helmet" #Evasion
+BaseType "Expert Hunter Hood"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+Show
+Class "Helmet" #Evasion
+BaseType "Expert Swathed Cap"
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Heavy Crown"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Martyr Crown"
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Shielded Helm"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Cowled Helm"
+SetBorderColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------
+
+Show
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Tribal Mask"
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+Show
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Veiled Mask"
+SetBorderColor 255 255 0 200
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#-------------------------------------------------------
+# HELMETS
+#-------------------------------------------------------
+
+Hide
+Class "Helmet" #Armour
+BaseType "Expert Elite Greathelm"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour
+BaseType "Expert Spired Greathelm"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Energy Shield
+BaseType "Expert Feathered Tiara"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Energy Shield
+BaseType "Expert Chain Tiara"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Evasion
+BaseType "Expert Hunter Hood"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Evasion
+BaseType "Expert Swathed Cap"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Heavy Crown"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Martyr Crown"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Shielded Helm"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Cowled Helm"
+Rarity < Rare
+SetBorderColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Tribal Mask"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Veiled Mask"
+Rarity < Rare
+SetBorderColor 255 255 0 200
+SetBackgroundColor 0 0 0 170
+
+#--------------------------------------------------------------------
+
+Hide
+Class "Helmet" #Armour
+BaseType "Expert Elite Greathelm"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour
+BaseType "Expert Spired Greathelm"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Helmet" #Energy Shield
+BaseType "Expert Feathered Tiara"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Helmet" #Energy Shield
+BaseType "Expert Chain Tiara"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Helmet" #Evasion
+BaseType "Expert Hunter Hood"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Helmet" #Evasion
+BaseType "Expert Swathed Cap"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Heavy Crown"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour/Energy Shield
+BaseType "Expert Martyr Crown"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Shielded Helm"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Helmet" #Armour/Evasion
+BaseType "Expert Cowled Helm"
+Rarity > Magic
+SetBorderColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Tribal Mask"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Helmet" #Evasion/Energy Shield
+BaseType "Expert Veiled Mask"
+Rarity > Magic
+SetBorderColor 255 255 0 200
+SetBackgroundColor 0 0 0 170
+
+#-------------------------------------------------------
+# GLOVES
+#-------------------------------------------------------
+
+Hide
+Class "Gloves" #Armour
+BaseType "Expert Moulded Mitts"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Armour
+BaseType "Expert Bolstered Mitts"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Energy Shield
+BaseType "Expert Intricate Gloves"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Energy Shield
+BaseType "Expert Jewelled Gloves"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Evasion
+BaseType "Expert Spined Bracers"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Evasion
+BaseType "Expert Sectioned Bracers"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Armour/Energy Shield
+BaseType "Expert Goldcast Cuffs"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Armour/Energy Shield
+BaseType "Expert Aged Cuffs"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Armour/Evasion
+BaseType "Expert Doubled Gauntlets"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Armour/Evasion
+BaseType "Expert Layered Gauntlets"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Evasion/Energy Shield
+BaseType "Expert Spiral Wraps"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Evasion/Energy Shield
+BaseType "Expert Linen Wraps"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#--------------------------------------------------------------------
+
+Show
+Class "Gloves" #Armour
+BaseType "Expert Moulded Mitts"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Gloves" #Armour
+BaseType "Expert Bolstered Mitts"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Gloves" #Energy Shield
+BaseType "Expert Intricate Gloves"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Gloves" #Energy Shield
+BaseType "Expert Jewelled Gloves"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Gloves" #Evasion
+BaseType "Expert Spined Bracers"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Gloves" #Evasion
+BaseType "Expert Sectioned Bracers"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Armour/Energy Shield
+BaseType "Expert Goldcast Cuffs"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Armour/Energy Shield
+BaseType "Expert Aged Cuffs"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Gloves" #Armour/Evasion
+BaseType "Expert Doubled Gauntlets"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Gloves" #Armour/Evasion
+BaseType "Expert Layered Gauntlets"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Gloves" #Evasion/Energy Shield
+BaseType "Expert Spiral Wraps"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Gloves" #Evasion/Energy Shield
+BaseType "Expert Linen Wraps"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------------------------------------
+# BOOTS
+#-------------------------------------------------------
+
+Hide
+Class "Boots" #Armour
+BaseType "Expert Stone Greaves"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour
+BaseType "Expert Trimmed Greaves"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Boots" #Energy Shield
+BaseType "Expert Feathered Sandals"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Boots" #Energy Shield
+BaseType "Expert Silk Slippers"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Evasion
+BaseType "Expert Lizardscale Boots"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Evasion
+BaseType "Expert Steeltoe Boots"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Armour/Energy Shield
+BaseType "Expert Pelt Leggings"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour/Energy Shield
+BaseType "Expert Secured Leggings"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Armour/Evasion
+BaseType "Expert Stacked Sabatons"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour/Evasion
+BaseType "Expert Braced Sabatons"
+Rarity < Rare
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Evasion/Energy Shield
+BaseType "Expert Hunting Shoes"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Evasion/Energy Shield
+BaseType "Expert Threaded Shoes"
+Rarity < Rare
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#--------------------------------------------------------------------
+
+Hide
+Class "Boots" #Armour
+BaseType "Expert Stone Greaves"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour
+BaseType "Expert Trimmed Greaves"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Boots" #Energy Shield
+BaseType "Expert Feathered Sandals"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Boots" #Energy Shield
+BaseType "Expert Silk Slippers"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Boots" #Evasion
+BaseType "Expert Lizardscale Boots"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Boots" #Evasion
+BaseType "Expert Steeltoe Boots"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Armour/Energy Shield
+BaseType "Expert Pelt Leggings"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour/Energy Shield
+BaseType "Expert Secured Leggings"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Hide
+Class "Boots" #Armour/Evasion
+BaseType "Expert Stacked Sabatons"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Hide
+Class "Boots" #Armour/Evasion
+BaseType "Expert Braced Sabatons"
+Rarity > Magic
+SetBorderColor 255 255 255 170
+SetBackgroundColor 0 0 0 170
+
+#-------------------------
+
+Show
+Class "Boots" #Evasion/Energy Shield
+BaseType "Expert Hunting Shoes"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Boots" #Evasion/Energy Shield
+BaseType "Expert Threaded Shoes"
+Rarity > Magic
+SetBorderColor 255 255 0 170
+SetBackgroundColor 0 0 0 170
+
+#---------------------------------------------------------------------------------
+# ADVANCED BASES WITH 10+ QUALITY
+#---------------------------------------------------------------------------------
+
+Hide
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+BaseType "Advanced"
+SetBackgroundColor 0 0 0 170
+Quality >= 10
+PlayEffect Yellow
+
+#---------------------------------------------------------------------------------
+# Showing Expert bases on Maps
+#---------------------------------------------------------------------------------
+Hide
+Class "Quiver"
+BaseType "Advanced" "Expert"
+Rarity <= Rare
+SetBackgroundColor 0 0 0 170
+AreaLevel > 64
+
+
+Hide
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+BaseType "Expert" 
+Rarity < Rare
+SetBackgroundColor 0 0 0 170
+PlayEffect Yellow
+
+#---------------------------------------------------------------------------------
+# Hiding Advanced bases on Maps And Normal/Magic Expert bases
+#---------------------------------------------------------------------------------
+
+Hide
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+BaseType "Advanced" "Expert"
+Quality < 10
+SetBackgroundColor 0 0 0 170
+AreaLevel > 64
+
+#---------------------------------------------------------------------------------
+# SAFEGUARD
+#---------------------------------------------------------------------------------
+
+Hide
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+Rarity < Rare
+SetBackgroundColor 0 0 0 170
+AreaLevel > 64
+
+Show
+Class "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+SetBackgroundColor 0 0 0 170
+
+#---------------------------------------------------------------------------------
+# Showing basic Jewelery with cyan border
+#---------------------------------------------------------------------------------
+
+Show
+Class "Rings" "Amulets" "Belts"
+BaseType "Unset" "Stellar" "Lazuli" "Iron" "Pearl" "Emerald" "Jade" "Crimson" "Azure" "Lunar" "Amber" "Lapis" "Rawhide" "Utility" "Fine" "Linen" "Wide" "Long" "Plate" "Ornate" "Mail" "Double" "Heavy"
+SetBorderColor 0 240 190 170
+Rarity = Normal
+SetTextColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Rings" "Amulets" "Belts"
+BaseType "Unset" "Stellar" "Lazuli" "Iron" "Pearl" "Emerald" "Jade" "Crimson" "Azure" "Lunar" "Amber" "Lapis" "Rawhide" "Utility" "Fine" "Linen" "Wide" "Long" "Plate" "Ornate" "Mail" "Double" "Heavy"
+SetBorderColor 0 240 190 170
+Rarity = Magic
+SetTextColor 136 136 255 255
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Rings" "Amulets" "Belts"
+BaseType "Unset" "Stellar" "Lazuli" "Iron" "Pearl" "Emerald" "Jade" "Crimson" "Azure" "Lunar" "Amber" "Lapis" "Rawhide" "Utility" "Fine" "Linen" "Wide" "Long" "Plate" "Ornate" "Mail" "Double" "Heavy"
+SetBorderColor 0 240 190 170
+Rarity = Rare
+SetTextColor 255 255 119 225
+SetBackgroundColor 0 0 0 170
+
+#---------------------------------------------------------------------------------
+# Highliting GOOD (Resists, Spirit, Rarity. Life) Jewelery with cyan background
+#---------------------------------------------------------------------------------
+
+Show
+Class "Rings" "Amulets"
+BaseType "Topaz" "Sapphire" "Ruby" "Amethyst" "Gold" "Solar" "Prismatic" "Breach" "Bloodstone"
+SetBorderColor 0 240 190 170
+Rarity = Normal
+SetTextColor 255 255 255 200
+SetBackgroundColor 0 240 190 50
+
+Show
+Class "Rings" "Amulets"
+BaseType "Topaz" "Sapphire" "Ruby" "Amethyst" "Gold" "Solar" "Prismatic" "Breach" "Bloodstone"
+SetBorderColor 0 240 190 170
+Rarity = Magic
+SetTextColor 136 136 255 255
+SetBackgroundColor 0 240 190 50
+
+Show
+Class "Rings" "Amulets" "Belts"
+BaseType "Topaz" "Sapphire" "Ruby" "Amethyst" "Gold" "Solar" "Prismatic" "Breach" "Bloodstone"
+SetBorderColor 0 240 190 170
+Rarity = Rare
+SetTextColor 255 255 119 225
+SetBackgroundColor 0 240 190 50
+
+#---------------------------------------------------------------------------------
+# Special Items: Jewels and Charms
+#---------------------------------------------------------------------------------
+
+Show
+Class "Jewel"
+SetBorderColor 255 20 147
+SetBackgroundColor 0 0 0 170
+PlayEffect Yellow Temp
+
+Hide
+Class "Charm"
+BaseType "Charm"
+SetBorderColor 255 255 0
+SetBackgroundColor 0 0 0 170
+PlayEffect Yellow Temp
+AreaLevel > 64
+
+Show
+Class "Charm"
+BaseType "Charm"
+SetBorderColor 255 255 0
+SetBackgroundColor 0 0 0 170
+PlayEffect Yellow Temp
+
+#---------------------------------------------------------------------------------
+# Special Currency and items - Some get irrevelant after the need for them is satisfied. Dirt cheap so no fancy highlights.
+#---------------------------------------------------------------------------------
+
+#Uncut Gems
+
+Hide
+BaseType "Uncut "
+ItemLevel <= 18
+SetTextColor 0 255 255
+SetBackgroundColor 0 0 0 170
+SetFontSize 32
+AreaLevel >= 78
+
+Show
+BaseType "Uncut Spirit Gem" "Uncut Skill Gem"
+ItemLevel = 20
+SetTextColor 0 255 255
+SetBackgroundColor 255 255 255 170
+SetFontSize 45
+MinimapIcon 0 Cyan Pentagon
+PlayEffect Cyan
+
+Show
+BaseType "Uncut "
+SetTextColor 0 255 255
+SetBackgroundColor 0 0 0 170
+SetFontSize 32
+MinimapIcon 2 Cyan Pentagon
+PlayEffect Cyan Temp
+
+# Runes
+
+Hide
+BaseType " Rune"
+SetTextColor 222 170 0
+SetBackgroundColor 0 0 0 170
+PlayEffect Orange Temp
+AreaLevel >= 64
+
+Show 
+BaseType " Rune"
+SetTextColor 222 170 0
+SetBackgroundColor 0 0 0 170
+PlayEffect Orange Temp
+
+# Relics
+
+Show 
+Class "Relic"
+SetBackgroundColor 0 0 0 170
+SetBorderColor 0 191 0 170
+PlayEffect Green
+
+# Waystones
+
+Hide
+BaseType "Waystone"
+WaystoneTier < 14
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 198 198 198 170
+AreaLevel > 74
+
+Show
+BaseType "Waystone" "Tablet"
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 198 198 198 170
+PlayAlertSound 4 300
+PlayEffect White
+MinimapIcon 1 White Square
+
+# Trial Keys
+
+Show
+BaseType "Barya" "Inscribed Ultimatum"
+SetTextColor 0 255 0 255
+SetBorderColor 0 255 127 200
+SetBackgroundColor 0 0 0 170
+PlayAlertSound 9 300
+PlayEffect Green
+MinimapIcon 2 Green Square
+
+# Flasks
+
+Hide
+Class "Flask"
+SetBackgroundColor 0 0 0 170
+AreaLevel >= 64
+
+Show
+Class "Flask"
+SetBackgroundColor 0 0 0 170
+
+#---------------------------------------------------------------------------------
+# Currency, tiered by vaule
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with red text and border.
+
+Show
+Class "Currency" 
+BaseType "Divine" "Greater Jeweller's Orb" "Perfect Jeweller's Orb" "Mirror" "Gold Key"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+# Tier B - RedOrange opaque box with white text and border.
+
+Show
+Class "Currency" 
+BaseType "Orb of Annulment" "Orb of Chance" "Chaos Orb" "Exalted Orb" "Silver Key" "Vaal Orb" "Glassblower's Bauble"
+SetFontSize 40 
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 240 90 35
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Star
+
+# Tier C - Orange opaque box with white text and border.
+
+Show
+Class "Currency" 
+BaseType "Regal Orb" "Artificer's Orb" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Bronze Key" "Gemcutter's Prism" "Lesser Jeweller's Orb" "Chance Shard"
+SetFontSize 36
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 249 150 25 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+
+#Tier D - Greyed out, transparent, and smaller to decluter the screen - in most cases not worth picking up.
+
+Hide
+AreaLevel >= 65
+BaseType "Scroll of Wisdom" "Shard" "Orb of Augmentation" "Orb of Transmutation"
+SetFontSize 32
+SetTextColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+
+Show
+Class "Currency"
+BaseType "Orb of Transmutation" "Scroll of Wisdom" "Shard" "Orb of Augmentation"
+SetFontSize 32
+SetTextColor 255 255 255 200
+SetBackgroundColor 0 0 0 170
+PlayEffect White Temp
+
+#---------------------------------------------------------------------------------
+# Gold. We are fully hiding gold on maps
+#---------------------------------------------------------------------------------
+
+Hide
+BaseType = "Gold"
+StackSize <= 100
+SetFontSize 32
+SetTextColor 128 108 0 255
+SetBorderColor 255 255 255 0
+SetBackgroundColor 255 255 255 0
+AreaLevel < 64
+
+Hide
+BaseType = "Gold"
+SetFontSize 32
+SetTextColor 128 108 0 255
+SetBorderColor 255 255 255 0
+SetBackgroundColor 255 255 255 0
+AreaLevel >= 64
+
+Show
+BaseType = "Gold"
+StackSize >= 100
+SetFontSize 32
+SetTextColor 128 108 0 255
+SetBorderColor 255 255 255 0
+SetBackgroundColor 255 255 255 0
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Delirium 
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with red text and border
+
+Show
+Class "Currency"
+BaseType "Distilled Despair" "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Distilled Disgust"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Circle
+
+# Tier B - Orange opaque box with black text and border
+
+Show
+Class "Currency"
+BaseType "Distilled Paranoia" "Distilled Envy" "Distilled Greed"
+SetFontSize 40
+SetTextColor 50 50 50 255
+SetBorderColor 50 50 50 255
+SetBackgroundColor 240 90 35 255
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Circle
+
+# Tier C Orange opaque box with black text and border 
+
+Show
+Class "Currency"
+BaseType "Distilled Ire" "Distilled Guilt"
+SetFontSize 36
+SetTextColor 50 50 50 255
+SetBorderColor 50 50 50 255
+SetBackgroundColor 249 150 25 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter"
+SetFontSize 36
+SetTextColor 50 50 50 255
+SetBorderColor 50 50 50 255
+SetBackgroundColor 249 150 25 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 2 Orange Circle
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Soul Cores
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with red text and border
+
+Show
+Class "Soul Core"
+BaseType " of Zalatl" " of Azcapa"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Kite
+
+# Tier B - Orange opaque box with red text and border
+
+Show
+Class "Soul Core"
+BaseType " of Tacati" " of Jiquani" " of Citaqualotl" " of Puhuarte" " of Tzamoto" " of Xopec" " of Quipolatl" " of Ticaba" " of Atmohua"  " of Zantipi" " of Opiloti" " of Topotante" " of Cholotl"
+SetFontSize 40
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 240 90 35 255
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Kite
+
+# Tier C Orange opaque box with red text and border 
+
+#Show
+#Class "Soul Core"
+#BaseType
+#SetFontSize 36
+#SetTextColor 255 0 0 255
+#SetBorderColor 255 0 0 255
+#SetBackgroundColor 249 150 25 255
+#PlayAlertSound 2 300
+#PlayEffect Yellow
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Essence
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with red text and border.
+
+Show
+Class "Currency"
+BaseType "Greater Essence of "
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Blue
+MinimapIcon 0 Red Raindrop
+
+# Tier B - RedOrange opaque box with white text and border.
+
+Show
+Class "Currency"
+BaseType " of Torment" " of Ruin" " of Haste" " of Electricity" 
+SetFontSize 40
+SetTextColor 0 50 255 255
+SetBorderColor 0 50 255 255
+SetBackgroundColor 240 90 35
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Raindrop
+
+# Tier C - Orange opaque box with white text and border.
+
+Show
+Class "Currency"
+BaseType " of the Body" " of the Mind" " of Enhancement" " of the Infinite" " of Flames" " of Ice" " of Battle" " of Sorcery"
+SetFontSize 36
+SetTextColor 0 50 255
+SetBorderColor 0 50 255
+SetBackgroundColor 249 150 25 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Breach Catalyst
+#---------------------------------------------------------------------------------
+
+# Tier B - Orange opaque box with purple text and border
+
+Show
+Class "Currency"
+BaseType "Neural" "Adaptive" "Tul's" "Reaver" "Esh's"
+SetFontSize 36
+SetTextColor 128 0 128 255
+SetBorderColor 128 0 128 255
+SetBackgroundColor 240 90 35 255
+PlayAlertSound 2 300
+PlayEffect Yellow Temp
+MinimapIcon 1 Orange Diamond
+
+# Tier C Orange opaque box with red text and border 
+
+Hide
+Class "Currency"
+BaseType "Flesh" "Carapace" "Xoph's" "Uul-Netol's" "Sibilant" "Chayula's" "Skittering" 
+SetFontSize 32
+SetTextColor 128 0 128 255
+SetBorderColor 128 0 128 255
+SetBackgroundColor 249 150 25 255
+
+Show
+Class "Currency"
+BaseType "Breach Splinter"
+SetFontSize 32
+SetTextColor 128 0 128 255
+SetBorderColor 128 0 128 255
+SetBackgroundColor 249 150 25 255
+MinimapIcon 2 Purple Diamond
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Ritual Omen's
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with purple text and border
+
+Show
+Class "Omen"
+BaseType "of Corruption" "of Amelioration" "Sinistral Exaltation" "Greater Annulment" "of Whittling" " Sinistral Erasure" "Dextral Erasure" "Sinistral Annulment" "Dextral Annulment" "Sinistral Alchemy"
+SetFontSize 45
+SetTextColor 51 25 0 255
+SetBorderColor 51 25 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Brown
+MinimapIcon 0 Red Moon
+
+# Tier B - Orange opaque box with purple text and border
+
+Show
+Class "Omen"
+BaseType "Dextral Alchemy" "Sinistral Coronation" "Dextral Coronation" "of Refreshment" "of Resurgence" "Dextral Exaltation" "Greater Exaltation"
+SetFontSize 40
+SetTextColor 51 25 0 255
+SetBorderColor 51 25 0 255
+SetBackgroundColor 240 90 35 255
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 1 Orange Moon
+
+# Tier C Orange opaque box with red text and border 
+
+#Show
+#Class "Omen"
+#BaseType
+#SetFontSize 36
+#SetTextColor 51 25 0 255
+#SetBorderColor 51 25 0 255
+#SetBackgroundColor 249 150 25 255
+#PlayAlertSound 2 300
+#PlayEffect Yellow
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Fragments
+#---------------------------------------------------------------------------------
+
+# Tier A - White opaque box with purple text and border
+
+Show
+BaseType "An audience with the King" "Simulacrum"  "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+SetFontSize 45
+SetTextColor 65 20 80 255
+SetBorderColor 65 20 80 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Pink 
+MinimapIcon 0 Pink Hexagon
+
+#---------------------------------------------------------------------------------
+# Special Currencies: Expedition
+#---------------------------------------------------------------------------------
+
+# Tier B - Orange opaque box with purple text and border
+
+Show
+Class "Currency"
+BaseType "Exotic Coinage"
+SetFontSize 36
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 1 300
+PlayEffect Purple Temp
+MinimapIcon 1 Orange UpsideDownHouse
+
+# Tier C Orange opaque box with red text and border 
+
+Show
+Class "Currency"
+BaseType "Broken Circle Artifact" "Black Scythe" "Order Artifact" "Sun Artifact" 
+SetFontSize 32
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+MinimapIcon 2 Purple UpsideDownHouse
+PlayEffect Purple Temp
